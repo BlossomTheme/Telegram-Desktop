@@ -1,0 +1,411 @@
+//Blossom Theme for Telegram Desktop
+//https://github.com/BlossomTheme/Telegram-Desktop
+//t.me/addtheme/blossomtheme
+
+// Color Pallete
+COLOR_BG: #10111b;
+COLOR_BG2: #090A0F;
+COLOR_COLOR_WHITE: #f9f7f2;
+COLOR_BG3: #403a72;
+COLOR_BLUE: #26b3d2;
+COLOR_GREEN: #55ff55;
+COLOR_ORANGE: #f46e00;
+COLOR_PINK: #ea748f;
+COLOR_PURPLE: #9200ff;
+COLOR_RED: #f70047;
+COLOR_FG: #ff058d;
+COLOR_BLACK: #1f1f27;
+BLACK: #000000;
+TRANSPARENT: #00000000;
+
+windowBg: COLOR_BG; // Main bg
+windowFg: COLOR_COLOR_WHITE; // Text color etc.
+windowBgOver: COLOR_BG2; // Generic bg hover color (random bits and pieces) & Search bar bg
+windowBgRipple: COLOR_BG; // Ripple color (on hover colored items) [te]
+windowFgOver: windowFg; // Text color on hover
+windowSubTextFg: COLOR_BG3; // Minor text and some labels (version number, last seen, etc.)
+windowSubTextFgOver: COLOR_PURPLE; // Hotkey hover text color?
+windowBoldFg: COLOR_FG; // Bolded text (headers) [te]
+windowBoldFgOver: windowBoldFg; // windowBoldFg but on hover (idk where used)
+windowBgActive: COLOR_GREEN; // Checked radio and checkbox color
+windowFgActive: COLOR_BG; // Button Text [te]
+windowActiveTextFg: COLOR_BLUE; // Hyperlink text color (and text input active labels)
+windowShadowFg: #000000f0; // [te]
+windowShadowFgFallback: BLACK; // [te]
+shadowFg: TRANSPARENT; // [te]
+slideFadeOutBg: windowBg; // ???
+slideFadeOutShadowFg: TRANSPARENT; // ??? [te]
+imageBg: BLACK; // ???
+imageBgTransparent: COLOR_WHITE; // ???
+activeButtonBg: COLOR_BG3; // Raised Button bg
+activeButtonBgOver: COLOR_PURPLE;  // Raised Button hover bg
+activeButtonBgRipple: COLOR_BG2; // Raised Button ripple color (and slected chat contact ripple?)
+activeButtonFg: windowBg; // Raised Button text color
+activeButtonFgOver: activeButtonFg; // Raised Button hover text color
+activeButtonSecondaryFg: COLOR_COLOR_WHITE; // Numbers (badges) text color on raised buttons
+activeButtonSecondaryFgOver: activeButtonSecondaryFg; // activeButtonSecondaryFg on hover
+activeLineFg: windowActiveTextFg; // Active text input bottom border color
+activeLineFgError: COLOR_RED; // activeLineFg but on error
+lightButtonBg: windowBg; // Flat button bg color
+lightButtonBgOver: COLOR_BG2; // Flat button bg color on hover
+lightButtonBgRipple: COLOR_BG; // Flat button ripple color
+lightButtonFg: COLOR_BG3; // Flat button text color [te]
+lightButtonFgOver: activeButtonBgOver; // Flat button text color on hover
+attentionButtonFg: COLOR_RED; // Warning button text color
+attentionButtonFgOver: attentionButtonFg; // Warning button text color hover
+attentionButtonBgOver: #ff555540; // Warning button bg color hover !!(COLOR_RED with transparency)!! [te]
+attentionButtonBgRipple: COLOR_BG; // Warning button ripple color
+// Outline buttons are flat btns that get a little indicator when hovered
+outlineButtonBg: windowBg; // Outline Button bg
+outlineButtonBgOver: COLOR_BG2; // Outline Button bg on hover [te]
+outlineButtonOutlineFg: windowActiveTextFg; // Outline Button indicator color
+outlineButtonBgRipple: COLOR_BG;  // Outline Button ripple color
+menuBg: windowBg; // Menu bg color
+menuBgOver: windowBgOver; // Menu bg color on hover
+menuBgRipple: windowBgRipple; // Icon ripple color
+// Menu Icons are icons that appear popup windows
+menuIconFg: COLOR_BG3; // Menu Icon text color
+menuIconFgOver: COLOR_PURPLE; // Menu Icon text color on hover
+menuSubmenuArrowFg: COLOR_BG3; // ???
+menuFgDisabled: COLOR_BG2; // Disabled menu text color
+menuSeparatorFg: #f8f8f210; // [te]
+scrollBarBg: COLOR_BG3; // Scroll Bar current slider color (indicator)
+scrollBarBgOver: COLOR_PURPLE; // Scroll Bar current slider color on hover
+scrollBg: COLOR_BG2; // Scroll Bar track bg color
+scrollBgOver: scrollBg; // Scroll Bar track bg color on hover
+smallCloseIconFg: COLOR_BG3; // Small menu close button color (its tiny)
+smallCloseIconFgOver: COLOR_RED; // smallCloseIconFg on hover [te]
+radialFg: COLOR_PINK; // ??? [te]
+radialBg: COLOR_BG2; // ??? [te]
+placeholderFg: COLOR_BG2; //windowSubTextFg; [te]
+placeholderFgActive: COLOR_BG3;
+inputBorderFg: COLOR_BG3; // Input text field undeline when not active
+filterInputBorderFg: COLOR_BG3; // Search box active border
+checkboxFg: COLOR_BG3; // checkbox inactive border [te]
+sliderBgInactive: COLOR_BG2; // windowBgActive;
+sliderBgActive: COLOR_GREEN; // A slider is the bottom border on tabs that slides around
+tooltiCOLOR_BG: #44475aa0; // [te]
+tooltiCOLOR_COLOR_WHITE: COLOR_COLOR_WHITE; // [te]
+tooltipBorderFg: TRANSPARENT; // [te]
+titleBg: COLOR_BG; // Window top bar bg color
+titleShadow: TRANSPARENT;
+titleButtonFg: COLOR_BG2; // [te]
+titleButtonBgOver: TRANSPARENT; // ??? [te]
+titleButtonFgOver: COLOR_ORANGE; // ??? [te]
+titleButtonCloseBgOver: TRANSPARENT; // ??? [te]
+titleButtonCloseFgOver: COLOR_RED; // ??? [te]
+titleFgActive: COLOR_PURPLE; // Window Title color when active [te]
+titleFg: COLOR_BG3; // Window Title color
+trayCounterBg: COLOR_RED; // Tray icon counter background for unread messages
+trayCounterBgMute: COLOR_BG; // ??? [te]
+trayCounterFg: COLOR_COLOR_WHITE; // ??? [te]
+trayCounterBgMacInvert: COLOR_BG3; // ??? [te]
+trayCounterFgMacInvert: COLOR_COLOR_WHITE; // ??? [te]
+layerBg: #44475a66; // bg overlay when menu is up [te]
+cancelIconFg: menuIconFg; // Main close menu color (like option close)
+cancelIconFgOver: COLOR_RED; // & on hover [te]
+boxBg: windowBg;
+boxTextFg: windowFg;
+boxTextFgGood: COLOR_GREEN;
+boxTextFgError: COLOR_RED;
+boxTitleFg: COLOR_WHITE;
+boxSearchBg: boxBg;
+boxSearchCancelIconFg: cancelIconFg;
+boxSearchCancelIconFgOver: cancelIconFgOver;
+boxTitleAdditionalFg: COLOR_BLUE; // [te]
+boxTitleCloseFg: cancelIconFg;
+boxTitleCloseFgOver: cancelIconFgOver;
+membersAboutLimitFg: COLOR_RED; // [te]
+contactsBg: windowBg; // Contact bg color on contacts page
+contactsBgOver: windowBgOver;
+contactsNameFg: COLOR_FG; // Contact name color on contacts page [te]
+contactsStatusFg: windowSubTextFg; // Contact status color on contacts page
+contactsStatusFgOver: windowSubTextFgOver;
+contactsStatusFgOnline: windowActiveTextFg;
+photoCropFadeBg: layerBg;
+photoCropPointFg: COLOR_BG3;
+introBg: windowBg;
+introTitleFg: windowBoldFg;
+introDescriptionFg: windowSubTextFg;
+introErrorFg: COLOR_RED; // [te]
+introCoverToCOLOR_BG: COLOR_BG; // [te]
+introCoverBottomBg: COLOR_BG; // [te]
+introCoverIconsFg: COLOR_BG3; // [te]
+introCoverPlaneTrace: COLOR_BLUE; // [te]
+introCoverPlaneInner: COLOR_BLUE; // [te]
+introCoverPlaneOuter: COLOR_BLUE; // [te]
+introCoverPlaneTop: COLOR_BLUE; // [te]
+dialogsMenuIconFg: menuIconFg; // menu hamburger color
+dialogsMenuIconFgOver: menuIconFgOver;
+dialogsBg: windowBg;
+dialogsNameFg: windowBoldFg; // Chat names color
+dialogsChatIconFg: COLOR_ORANGE; // [te]
+dialogsDateFg: windowSubTextFg;
+dialogsTextFg: windowSubTextFg;
+dialogsTextFgService: windowActiveTextFg;
+dialogsDraftFg: COLOR_RED; // Draft label color
+dialogsVerifiedIconBg: COLOR_BLUE; // verified icon bg [te]
+dialogsVerifiedIconFg: COLOR_BG; // verified icon text color [te]
+dialogsSendingIconFg: COLOR_ORANGE; // ??? little clock icon on chat contact (the ones on left sidebar) when sending
+dialogsSentIconFg: COLOR_GREEN;
+dialogsUnreadBg: COLOR_BG3; // [te]
+dialogsUnreadBgMuted: COLOR_BG2; // [te]
+dialogsUnreadFg: COLOR_COLOR_WHITE; // [te]
+dialogsBgOver: windowBgOver;
+dialogsNameFgOver: windowBoldFgOver;
+dialogsChatIconFgOver: dialogsChatIconFg;
+dialogsDateFgOver: windowSubTextFgOver;
+dialogsTextFgOver: windowSubTextFgOver;
+dialogsTextFgServiceOver: dialogsTextFgService;
+dialogsDraftFgOver: dialogsDraftFg;
+dialogsVerifiedIconBgOver: dialogsVerifiedIconBg;
+dialogsVerifiedIconFgOver: dialogsVerifiedIconFg;
+dialogsSendingIconFgOver: dialogsSendingIconFg;
+dialogsSentIconFgOver: dialogsSentIconFg;
+dialogsUnreadBgOver: dialogsUnreadBg;
+dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
+dialogsUnreadFgOver: dialogsUnreadFg;
+dialogsBgActive: COLOR_BG2;
+dialogsNameFgActive: COLOR_PINK;
+dialogsChatIconFgActive: COLOR_PURPLE;
+dialogsDateFgActive: windowActiveTextFg;
+dialogsTextFgActive: windowActiveTextFg;
+dialogsTextFgServiceActive: COLOR_ORANGE; // [te]
+dialogsDraftFgActive: dialogsDraftFg;
+dialogsVerifiedIconBgActive: dialogsVerifiedIconBg;
+dialogsVerifiedIconFgActive: dialogsVerifiedIconFg;
+dialogsSendingIconFgActive: dialogsSendingIconFg;
+dialogsSentIconFgActive: dialogsSentIconFg;
+dialogsUnreadBgActive: dialogsUnreadBg;
+dialogsUnreadBgMutedActive: dialogsUnreadBgMuted;
+dialogsUnreadFgActive: dialogsUnreadFg;
+dialogsForwardBg: dialogsBgActive;
+dialogsForwardFg: COLOR_BLUE; // [te]
+searchedBarBg: COLOR_BG; // Results & 'no msgs found' msg in search results [te]
+searchedBarBorder: TRANSPARENT; // [te]
+searchedBarFg: COLOR_PINK; // Text 'Search for messages' in search results. [te]
+topBarBg: windowBg;
+emojiPanBg: windowBg; // Emoji window bg
+emojiPanCategories: emojiPanBg;
+emojiPanHeaderFg: windowSubTextFg;
+emojiPanHeaderBg: emojiPanBg;
+stickerPanDeleteBg: #ff555540; // [te]
+stickerPanDeleteFg: COLOR_RED; // windowFgActive; [te]
+stickerPreviewBg: TRANSPARENT;
+historyTextInFg: windowFg;
+historyTextOutFg: windowFg;
+historyCaptionInFg: historyTextInFg;
+historyCaptionOutFg: historyTextOutFg;
+historyFileNameInFg: historyTextInFg;
+historyFileNameOutFg: historyTextOutFg;
+historyOutIconFg: COLOR_GREEN;
+historyOutIconFgSelected: COLOR_GREEN;
+historyIconFgInverted: COLOR_GREEN; // [te]
+historySendingOutIconFg: COLOR_ORANGE; // [te]
+historySendingInIconFg: COLOR_ORANGE; // [te]
+historySendingInvertedIconFg: COLOR_ORANGE; // little 'eye' icon on some media msgs (ie sticker, image) to indicate views? [te]
+historySystemBg: COLOR_FG; // [te]
+historySystemBgSelected: COLOR_ORANGE; // [te]
+historySystemFg: COLOR_BG; // windowFgActive; [te]
+historyUnreadBarBg: COLOR_BG2;
+historyUnreadBarBorder: COLOR_BG2;
+historyUnreadBarFg: COLOR_WHITE;
+historyForwardChooseBg: COLOR_BG3;
+historyForwardChooseFg: COLOR_WHITE;
+historyPeer1NameFg: COLOR_RED; // [te]
+historyPeer1UserpicBg: COLOR_RED; // [te]
+historyPeer2NameFg: COLOR_GREEN; // [te]
+historyPeer2UserpicBg: COLOR_GREEN; // [te]
+historyPeer3NameFg: COLOR_FG; // [te]
+historyPeer3UserpicBg: COLOR_FG; // [te]
+historyPeer4NameFg: COLOR_BLUE; // [te]
+historyPeer4UserpicBg: COLOR_BLUE; // [te]
+historyPeer5NameFg: COLOR_PURPLE; // [te]
+historyPeer5UserpicBg: COLOR_PURPLE; // [te]
+historyPeer6NameFg: COLOR_PINK; // [te]
+historyPeer6UserpicBg: COLOR_PINK; // [te]
+historyPeer7NameFg: COLOR_BLACK; // [te]
+historyPeer7UserpicBg: COLOR_BLACK; // [te]
+historyPeer8NameFg: COLOR_ORANGE; // [te]
+historyPeer8UserpicBg: COLOR_ORANGE; // [te]
+historyPeerUserpicFg: COLOR_BG; //  [te]
+historyScrollBarBg: scrollBarBg;
+historyScrollBarBgOver: scrollBarBgOver;
+historyScrollBg: scrollBg;
+historyScrollBgOver: scrollBgOver;
+msgInBg: COLOR_BG;
+msgInBgSelected: COLOR_PINK;
+msgOutBg: COLOR_BG3;
+msgOutBgSelected: COLOR_PURPLE;
+msgSelectOverlay: COLOR_BG;
+msgStickerOverlay: COLOR_BG2;
+msgInServiceFg: windowActiveTextFg; // Chat name color when system message in (ie the computer... Forwarded by, Channels, etc)
+msgInServiceFgSelected: windowActiveTextFg; // msgInServiceFg when selected
+msgOutServiceFg: windowActiveTextFg; // msgInServiceFg but out instead
+msgOutServiceFgSelected: windowActiveTextFg; // msgOutServiceFg when selected
+msgInShadow: TRANSPARENT;
+msgInShadowSelected: TRANSPARENT;
+msgOutShadow: TRANSPARENT;
+msgOutShadowSelected: TRANSPARENT;
+msgInDateFg: #8beafdcc; // Date in IN msg (text color) [ie time recieved] [te]
+msgInDateFgSelected: #282a3690; // msgInDateFG but when msg is selected [te]
+msgOutDateFg: #8beafdcc; // Date in OUT msg (text color) [ie time sent] [te]
+msgOutDateFgSelected: #282a3690; // msgOutDateFG but when msg is selected [te]
+msgServiceFg: #282a36cc; // [te]
+msgServiceBg: #6272a4cc; // Sticker reply, dates in chat history, bot buttons [te]
+msgServiceBgSelected: #ff79c7cc; // [te]
+msgInReplyBarColor: activeLineFg;
+msgInReplyBarSelColor: activeLineFg;
+msgOutReplyBarColor: activeLineFg;
+msgOutReplyBarSelColor: activeLineFg;
+msgImgReplyBarColor: activeLineFg;
+msgInMonoFg: COLOR_ORANGE; // [te]
+msgOutMonoFg: COLOR_ORANGE; // [te]
+msgDateImgFg: windowFg;
+msgDateImgBg: windowBg;
+msgDateImgBgOver: windowBgOver;
+msgDateImgBgSelected: windowBgOver;
+msgFileThumbLinkInFg: COLOR_FG; // [te]
+msgFileThumbLinkInFgSelected: COLOR_BG3; // [te]
+msgFileThumbLinkOutFg: COLOR_FG; // [te]
+msgFileThumbLinkOutFgSelected: COLOR_BG3; // [te]
+msgFileInBg: COLOR_PINK; // [te]
+msgFileInBgOver: COLOR_COLOR_WHITE; // [te]
+msgFileInBgSelected: COLOR_BG3; // [te]
+msgFileOutBg: #bc94f9; // [te]
+msgFileOutBgOver: COLOR_COLOR_WHITE; // [te]
+msgFileOutBgSelected: COLOR_BG2; //  [te]
+msgFile1Bg: COLOR_BLUE; // [te]
+msgFile1BgDark: #38d9fc; // [te]
+msgFile1BgOver: #59e0fc; // [te]
+msgFile1BgSelected: #bdf2fe; // [te]
+msgFile2Bg: COLOR_GREEN; // [te]
+msgFile2BgDark: #07ee41; // [te]
+msgFile2BgOver: #1df954; // [te]
+msgFile2BgSelected: #82fba0; // [te]
+msgFile3Bg: COLOR_RED; // [te]
+msgFile3BgDark: #ff0000; // [te]
+msgFile3BgOver: #ff2222; // [te]
+msgFile3BgSelected: #ff8888; // [te]
+msgFile4Bg: COLOR_FG; // [te]
+msgFile4BgDark: #e7f63b; // [te]
+msgFile4BgOver: #ebf85b; // [te]
+msgFile4BgSelected: #f7fcbd; // [te]
+msgWaveformInActive: COLOR_GREEN; // Waveforms for audio messages (active is the played part)
+msgWaveformInActiveSelected: COLOR_GREEN;
+msgWaveformInInactive: windowBg;
+msgWaveformInInactiveSelected: windowBg;
+msgWaveformOutActive: COLOR_GREEN;
+msgWaveformOutActiveSelected: COLOR_GREEN;
+msgWaveformOutInactive: windowBg;
+msgWaveformOutInactiveSelected: windowBg;
+msgBotKbOverBgAdd: COLOR_BG; // [te]
+msgBotKbIconFg: COLOR_BG; //  [te]
+msgBotKbRippleBg: activeButtonBgRipple; //menuBgRipple; // Bot (system) chat buttons [ie theme like/dislike]
+mediaInFg: COLOR_ORANGE; // [te]
+mediaInFgSelected: COLOR_ORANGE; // [te]
+mediaOutFg: COLOR_ORANGE; // [te]
+mediaOutFgSelected: COLOR_ORANGE; // [te]
+youtubePlayIconBg: COLOR_RED;
+youtubePlayIconFg: COLOR_COLOR_WHITE;
+videoPlayIconBg: COLOR_BG3; // [te]
+videoPlayIconFg: COLOR_COLOR_WHITE; // [te]
+toastBg: COLOR_BG3; // [te]
+toastFg: COLOR_WHITE;
+reportSpamBg: emojiPanHeaderBg;
+reportSpamFg: windowFg;
+historyToDownShadow: TRANSPARENT;
+historyComposeAreaBg: windowBg;
+historyComposeAreaFg: historyTextInFg;
+historyComposeAreaFgService: COLOR_COLOR_WHITE; // [te]
+historyComposeIconFg: menuIconFg; // Bottom chat icons (Attach File, Emoji, Microphone)
+historyComposeIconFgOver: menuIconFgOver;
+historySendIconFg: menuIconFg; // Paper plane icon that shows when text is typed (click to send)
+historySendIconFgOver: COLOR_GREEN; // [te]
+historyPinnedBg: windowBg;
+historyReplyBg: historyComposeAreaBg;
+historyReplyCancelFg: cancelIconFg;
+historyReplyCancelFgOver: COLOR_RED; // [te]
+historyComposeButtonBg: historyComposeAreaBg;
+historyComposeButtonBgOver: windowBgOver;
+historyComposeButtonBgRipple: windowBgRipple;
+overviewCheckBg: TRANSPARENT; // [te]
+overviewCheckFg: windowBg;
+overviewCheckFgActive: windowBg;
+overviewPhotoSelectOverlay: COLOR_BG2; // [te]
+profileStatusFgOver: COLOR_PURPLE;
+notificationsBoxMonitorFg: windowFg;
+notificationsBoxScreenBg: COLOR_BG2; // [te]
+notificationSampleUserpicFg:  COLOR_BLUE; // [te]
+notificationSampleCloseFg: COLOR_RED; // [te]
+notificationSampleTextFg: COLOR_COLOR_WHITE; // [te]
+notificationSampleNameFg: COLOR_FG; // [te]
+mainMenuBg: windowBg;
+mainMenuCoverBg: COLOR_BG2; // [te]
+mainMenuCoverFg:  COLOR_GREEN; // [te]
+mediaPlayerBg:  COLOR_BG; //  [te]
+mediaPlayerActiveFg: COLOR_GREEN; // [te]
+mediaPlayerInactiveFg: COLOR_BG3; // [te]
+mediaPlayerDisabledFg: COLOR_BG2; // [te]
+mediaviewFileBg: COLOR_BG2; //  [te]
+mediaviewFileNameFg: windowFg;
+mediaviewFileSizeFg: COLOR_ORANGE; //windowSubTextFg; [te]
+mediaviewFileRedCornerFg: #ff0000; // [te]
+mediaviewFileYellowCornerFg: #e7f63b; // [te]
+mediaviewFileGreenCornerFg: #07ee41; // [te]
+mediaviewFileBlueCornerFg: #38d9fc; // [te]
+mediaviewFileExtFg: COLOR_BG; // [te]
+mediaviewMenuBg: COLOR_BG; // [te]
+mediaviewMenuBgOver: COLOR_BG2; // [te]
+mediaviewMenuBgRipple: COLOR_BG; // [te]
+mediaviewMenuFg: COLOR_COLOR_WHITE; // windowFgActive; [te]
+mediaviewBg: #282a36e0; // [te]
+mediaviewVideoBg: imageBg;
+mediaviewControlBg: COLOR_BG; //  [te]
+mediaviewControlFg: COLOR_BG3; // windowFgActive; [te]
+mediaviewCaptionBg: COLOR_BG; //  [te]
+mediaviewCaptionFg: COLOR_WHITE;
+mediaviewTextLinkFg: COLOR_BLUE; // [te]
+mediaviewSaveMsgBg: toastBg;
+mediaviewSaveMsgFg: toastFg;
+mediaviewPlaybackActive: COLOR_GREEN; // video playback progress already played part
+mediaviewPlaybackInactive: COLOR_BG2; // video playback progress upcoming (not played yet) part
+mediaviewPlaybackActiveOver: COLOR_PINK; // video playback progress already played part with mouse over
+mediaviewPlaybackInactiveOver: COLOR_BG3; // video playback progress upcoming (not played yet) part with mouse over
+mediaviewPlaybackProgressFg: COLOR_COLOR_WHITE; // video playback progress text
+mediaviewPlaybackIconFg: COLOR_GREEN; // video playback controls icon
+mediaviewPlaybackIconFgOver: COLOR_PINK; // video playback controls icon with mouse over
+mediaviewPipControlsFg: COLOR_GREEN; // picture-in-picture controls
+mediaviewPipControlsFgOver : COLOR_PINK; // picture-in-picture controls with mouse over
+mediaviewPipFade : COLOR_BG; // picture-in-picture gradient fade controls background
+mediaviewPipPlaybackActive : COLOR_GREEN; // picture-in-picture playback progress already played part
+mediaviewPipPlaybackInactive: COLOR_BG2; // picture-in-picture playback progress upcoming (not played yet) part
+mediaviewTransparentBg: BLACK; // [te]
+mediaviewTransparentFg: #666666; // [te]
+notificationBg: windowBg;
+titleButtonBg: TRANSPARENT; // [te]
+titleButtonBgActive: TRANSPARENT; // [te]
+titleButtonBgActiveOver: COLOR_BG2; // [te]
+titleButtonFgActiveOver: COLOR_ORANGE; // [te]
+titleButtonFgActive: COLOR_ORANGE; // [te]
+titleButtonCloseBg: TRANSPARENT; // [te]
+titleButtonCloseFg: COLOR_BG2; // [te]
+titleButtonCloseBgActive: TRANSPARENT; // [te]
+titleButtonCloseFgActive: COLOR_RED; // [te]
+titleButtonCloseBgActiveOver: COLOR_BG2; // [te]
+titleButtonCloseFgActiveOver: titleButtonCloseFgOver;
+filterInputInactiveBg: #44475a20; // [te]
+profileVerifiedCheckBg: COLOR_BLUE; // [te]
+historyReplyIconFg: windowBgActive;
+historyToDownBg: #282a36cc; // [te]
+titleBgActive: COLOR_BG; //  [te]
+sideBarBg: COLOR_BG; // filters side bar background
+sideBarBgActive: COLOR_BG2; // filters side bar active background
+sideBarBgRipple: COLOR_BG2; // filters side bar ripple effect
+sideBarTextFg: COLOR_FG; // filters side bar text
+sideBarTextFgActive: COLOR_PINK; // filters side bar active item text
+sideBarIconFg: COLOR_BG3; // filters side bar icon
+sideBarIconFgActive: COLOR_PURPLE; // filters side bar active item icon
+sideBarBadgeBg: COLOR_PURPLE; // filters side bar badge background
+sideBarBadgeBgMuted: COLOR_BG2; // filters side bar unimportant badge background
+sideBarBadgeFg: COLOR_COLOR_WHITE; // filters side bar badge text
